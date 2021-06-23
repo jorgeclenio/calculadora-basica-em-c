@@ -1,21 +1,22 @@
 /*-----------------------------------------------------------------------------------------
-Desenvolvedor: Jorge Clênio da Silva Junior
-Local: Brasília - DF
-Data de criação: 28/09/2017
-Curso: Engenharia da Computação
-Semestre: 4º Semestre
+Desenvolvedor: Jorge ClÃªnio da Silva Junior
+Local: BrasÃ­lia - DF
+Data de criaÃ§Ã£o: 28/09/2017
+Curso: Engenharia da ComputaÃ§Ã£o
+Semestre: 4Âº Semestre
 -----------------------------------------------------------------------------------------*/
-/*Inicio Bibliotecas*/
+//Inicio Bibliotecas
 #include<stdio.h>
 #include<stdlib.h>
 #include<locale.h>
-/*Fim Bibliotecas*/
+//Fim Bibliotecas
 //-----------------------------------------------------------------------------------------
-/*Inicio Funções*/
+//Inicio VariÃ¡veis globais
+float a, b, r;
+//Fim VariÃ¡veis globais
+//-----------------------------------------------------------------------------------------
+/*Inicio FunÃ§Ãµes*/
 float soma(){
-	
-	float a, b, r;
-	
 	printf("Insira o valor de A: ");
 	scanf("%f",&a);
 	printf("Insira o valor de B: ");
@@ -25,9 +26,6 @@ float soma(){
 }
 
 float subtrair(){
-	
-	float a, b, r;
-	
 	printf("Insira o valor de A: ");
 	scanf("%f",&a);
 	printf("Insira o valor de B: ");
@@ -37,9 +35,6 @@ float subtrair(){
 }
 
 float multiplicar(){
-	
-	float a, b, r;
-	
 	printf("Insira o valor de A: ");
 	scanf("%f",&a);
 	printf("Insira o valor de B: ");
@@ -49,19 +44,15 @@ float multiplicar(){
 }
 
 float dividir(){
-	
-	float a, b, r;
-	
 	printf("Insira o valor de A: ");
 	scanf("%f",&a);
 	printf("Insira o valor de B: ");
 	scanf("%f",&b);
 	r=a/b;
-	printf("\nA divisão entre A e B e: %.2f\n\n",r);
+	printf("\nA divisÃ£o entre A e B e: %.2f\n\n",r);
 }
 
 void menu_principal(){
-	
 	int opcao;
 
 	do{
@@ -110,19 +101,18 @@ void menu_principal(){
 		}
 	}while(opcao!=0);
 }
-/*Fim Funções*/
+/*Fim FunÃ§Ãµes*/
 //-----------------------------------------------------------------------------------------
-/*Inicio Chamada das Funções*/
+/*Inicio Chamada das FunÃ§Ãµes*/
 float soma();
 float subtrair();
 float multiplicar();
 float dividir();
 void menu_principal();
-/*Fim Chamada das Funções*/
+/*Fim Chamada das FunÃ§Ãµes*/
 //-----------------------------------------------------------------------------------------
-/*Inicio Main (Função principal)*/
+/*Inicio Main (FunÃ§Ã£o principal)*/
 int main(void){
-	
 	system("color 0A");
 	setlocale(LC_ALL, "Portuguese");
 	menu_principal();
@@ -130,5 +120,5 @@ int main(void){
 	getch();
 	return 0;
 }
-/*Fim Main (Função principal)*/
+/*Fim Main (FunÃ§Ã£o principal)*/
 //-----------------------------------------------------------------------------------------
